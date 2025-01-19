@@ -1,1 +1,3 @@
-# projects-on-arduino
+Мои проекты на arduino
+
+Учебное устройство
