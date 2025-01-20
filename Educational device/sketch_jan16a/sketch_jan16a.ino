@@ -79,13 +79,13 @@ void loop() {
 
     // Рисуем на индикаторе выполнения
 
-    progressBarDraw(a);
+    progressBarDraw(p);
 
   }
 
   // Обновить смайлик
   
-  smileShow(a);
+  smileShow(p);
 
 }
 
@@ -94,9 +94,9 @@ void loop() {
 
 // Рисуем на индикаторе выполнения
 
-void progressBarDraw(int a) {
+void progressBarDraw(int p) {
 
-  int edge = map(a, 0, 1023, 0, 16);
+  int edge = map(p, 0, 100, 0, 16);
 
   lcd.setCursor(0, 1); 
 
@@ -109,9 +109,9 @@ void progressBarDraw(int a) {
 
 // Показываем смайлик
 
-void smileShow(int a) {
+void smileShow(int p) {
 
-  int n = map(a, 0, 1023, 0, 7);
+  int n = map(p, 0, 100, 0, 7);
 
   lcd.setCursor(5, 0); 
 
